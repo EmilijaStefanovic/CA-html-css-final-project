@@ -1,0 +1,335 @@
+:root {
+  --pink: #ff3998;
+  --dark-1: #555555;
+  --dark-2: #777777;
+  --dark-3: #eeeeee;
+  --light-grey: #cccccc;
+  --orange: #ff8139;
+  --lime-green: #39ffa0;
+  --light-lime-green: #edfff6;
+  --red: #ff3939;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+p,
+td,
+i {
+  color: var(--dark-2);
+  line-height: 1.8;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.hiden {
+  display: none;
+}
+
+.all-capitals {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.dark-color {
+  color: black;
+}
+
+.btn-sign-up {
+  font-weight: 500;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, var(--pink), var(--red), var(--orange)) border-box;
+  border: 4px solid transparent;
+  padding: 0.8rem 2.2rem;
+  border-radius: 50rem;
+  margin-top: 1rem;
+}
+
+.divider {
+  border-bottom: 2px solid var(--dark-3);
+}
+
+/* .space-between */
+
+/* --------- header --------- */
+
+.navigation {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.navigation img {
+  width: 15rem;
+}
+
+.fa-bars {
+  font-size: 2rem;
+}
+
+/* --------- first-section --------- */
+
+.first {
+  padding: 1rem;
+  height: 76vh;
+  background-image: url(assets/graphic.png);
+  background-repeat: no-repeat;
+  background-position: bottom 50px right -180px;
+  background-size: 85%;
+}
+
+h5 {
+  margin: 4rem 0 1rem 0;
+  color: var(--pink);
+}
+
+h1,
+.first p {
+  margin: 0;
+  max-width: 300px;
+  margin-bottom: 2rem;
+}
+
+/* --------- second-section --------- */
+
+.second {
+  background-image: url(assets/background.svg);
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+}
+
+.second h2 {
+  padding: 4rem 2rem 0.8rem 2rem;
+}
+
+.second p {
+  padding: 0 2rem 0.8rem 2rem;
+  font-size: 1.5rem;
+}
+
+/* --------- third section --------- */
+
+.companies {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 1rem;
+  max-width: 90%;
+}
+
+.companies div {
+  overflow: hidden;
+  max-width: 8.5rem;
+}
+
+/* --------- fourth-section --------- */
+
+.fourth:not(span) {
+  padding: 2rem;
+}
+
+.underline {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* --------- fifth-section --------- */
+.fifth {
+  max-width: 515px;
+  overflow: scroll;
+  margin-bottom: 5rem;
+}
+.auction-item {
+  width: 290;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.item-info {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--light-grey);
+  border-radius: 0 0 1rem 1rem;
+}
+
+.small {
+  font-size: 0.7rem;
+}
+
+.series-id {
+  color: var(--orange);
+}
+
+.focus {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* --------- sixth-section ---------*/
+
+.sixth {
+  padding: 0 1rem;
+}
+
+.sixth h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+/* --------- seventh-section ---------*/
+
+.seventh {
+  padding: 0 1rem 3rem 1rem;
+}
+
+.seventh p {
+  max-width: 15rem;
+}
+
+.green-nft {
+  background-image: url(assets/upsell-footer-image.svg);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 110% 100%;
+}
+
+/* --------- footer ---------*/
+
+footer {
+  padding: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.socials {
+  gap: 0.8rem;
+  padding-bottom: 2rem;
+}
+
+.footer-1,
+.footer-2 {
+  flex-direction: column;
+}
+
+.all {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 100%;
+}
+
+.footer-1 img {
+  width: 100%;
+}
+
+.footer-2 div > p:first-child {
+  font-weight: 600;
+}
+
+.end {
+  padding: 1rem;
+}
+
+@media screen and (min-width: 516px) {
+  .hiden {
+    display: initial;
+  }
+
+  h1 {
+    max-width: 35%;
+  }
+
+  .navigation i {
+    display: none;
+  }
+
+  .navigation nav a {
+    text-decoration: none;
+    color: var(--dark-1);
+    padding-right: 1rem;
+  }
+
+  .navigation nav a:last-child {
+    color: var(--pink);
+  }
+
+  .first {
+    background-position: bottom 50% right 10%;
+    background-size: 50%;
+  }
+
+  .second {
+    margin: 2rem;
+    background-size: 100%;
+    border-radius: 0.5rem;
+  }
+
+  .fifth {
+    max-width: 100%;
+  }
+  .container {
+    justify-content: space-around;
+  }
+
+  .green-nft .divider {
+    display: none;
+  }
+
+  .green-nft {
+    background-size: 11%;
+    background-position: bottom 0 right 20%;
+  }
+
+  .green-nft h1 {
+    max-width: 45%;
+  }
+
+  footer {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-1 img {
+    width: 60%;
+  }
+
+  .footer-1 {
+    flex-grow: 3;
+  }
+
+  .footer-2 {
+    flex-wrap: nowrap;
+    flex-grow: 5;
+  }
+
+  .all {
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+
+  .end {
+    justify-content: space-between;
+  }
+}
